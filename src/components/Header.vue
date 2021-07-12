@@ -1,6 +1,6 @@
 <template>
   <div class="header container">
-    <div>
+    <div class="img">
       <img src="../assets/dc-logo.png" alt="" />
     </div>
     <ul>
@@ -30,12 +30,15 @@ export default {
 .header {
   display: flex;
   height: 80px;
-  padding: 20px;
   justify-content: space-between;
   font-size: 14px;
   font-weight: 400;
-  img {
+  .img {
+    padding: 12px;
     height: 100%;
+    img {
+      height: 100%;
+    }
   }
 }
 
@@ -45,12 +48,12 @@ ul {
   text-align: center;
   height: 100%;
   li {
-    padding: 0 12px;
+    padding: 12px;
     height: 100%;
-    line-height: 40px;
-
+    line-height: 60px;
     &:hover {
       border-bottom: 2px solid $main-blu;
+      color: $main-blu;
     }
   }
 }
